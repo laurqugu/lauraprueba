@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Quinchia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-center">
+            <form action="#" id="form" class="border p-3 form">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="punto">Endpoints</label>
+                    </div>
+                    <select class="custom-select" id="endpoint" required>
+                        <option selected disabled>Seleccione una opción...</option>
+                        <option value="primos">Primos</option>
+                        <option value="primosGemelos">Primos Gemelos</option>
+                        <option value="primosBd">Primos BD</option>
+                        <option value="primosGemelosBd">Primos Gemelos BD</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="number">Número</label>
+                    <input type="number" name="number" min="1" id="number" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="response">Respuesta</label>
+                    <textarea class="form-control" id="response" rows="3" disabled></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>
